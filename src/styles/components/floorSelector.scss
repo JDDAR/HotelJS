@@ -1,0 +1,28 @@
+@use "../variables" as v;
+
+.containerButtons {
+  border-bottom: 1px solid rgba(v.$color-secondary, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 25px 0px;
+  h2 {
+    color: v.$color-secondary;
+  }
+  &__butons {
+    display: flex;
+    gap: 25px;
+    button {
+      padding: 10px 20px;
+      background-color: v.$color-secondary;
+      color: v.$color-Bg;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+}

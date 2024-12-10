@@ -1,0 +1,33 @@
+@use "../variables" as v;
+
+.containerRoomDetails {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  h2 {
+    color: v.$color-secondary;
+  }
+  &__containerRoom {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  &__room {
+    padding: 15px;
+    width: 300px;
+    height: auto;
+    border: 1px solid rgba(v.$color-secondary, 0.2);
+    border-radius: 8px;
+    p {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      strong {
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(v.$color-secondary, 0.1);
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
